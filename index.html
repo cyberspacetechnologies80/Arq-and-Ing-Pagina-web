@@ -7,6 +7,7 @@
         <link rel="shorcut icon" type="image/png" href="logo.png">
         <link rel="stylesheet" type="text/css" href="./estilos.css">  
         <script src="https://kit.fontawesome.com/e3c104304f.js" crossorigin="anonymous"></script>
+        <script src="./Javascript/script.js"></script>
     </head>
 
     <body>
@@ -15,14 +16,15 @@
             <div id="cajalogo">
                 <figure>
                     <img src="logo.png" alt="Logo" title="Logo" id="logo">
+                    <button id="Buton_menu" onclick="mostrar()"><i class="fas fa-bars"></i></button>
                 </figure>
             </div>
             <div id="opciones">
                 <a class="opcionmenuprincipal" href="index.html">INICIO</a>
-                <a id="btPortafolio" class="opcionmenuprincipal" href="#portafolio">PORTAFOLIO</a>
-                <a id="btNosotros" class="opcionmenuprincipal" href="#nosotros">NOSOTROS</a>
-                <a id="btServicios" class="opcionmenuprincipal" href="#servicios">SERVICIOS</a>
-                <a id="btContacto" class="opcionmenuprincipal" href="#contacto">CONTACTO</a>
+                <a id="btPortafolio" class="opcionmenuprincipal" href="#portafolio" onclick="quitar()">PORTAFOLIO</a>
+                <a id="btNosotros" class="opcionmenuprincipal" href="#nosotros" onclick="quitar()">NOSOTROS</a>
+                <a id="btServicios" class="opcionmenuprincipal" href="#servicios" onclick="quitar()">SERVICIOS</a>
+                <a id="btContacto" class="opcionmenuprincipal" href="#contacto" onclick="quitar()">CONTACTO</a>
             </div>    
         </nav>
 
@@ -70,38 +72,29 @@
                 <section id="mision">
                     <h2 class="title">MISION</h2>
                     <p class="paralax">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis malesuada fermentum. Donec ac ligula sapien. Donec sed orci at mauris rutrum mollis vel nec mauris. Integer arcu nisi, maximus et erat eu, cursus rhoncus velit. Praesent semper magna ut ligula bibendum imperdiet. Fusce sit amet rhoncus velit. Vivamus aliquam mollis ligula ac sollicitudin. Praesent ut odio erat. Vivamus suscipit hendrerit nisi. Sed vehicula nunc quis quam sodales tincidunt nec ac lacus. Ut vel sem non dolor facilisis mollis ut at elit. In a interdum nunc.
-                    </p>
-                    <p class="paralax">
-                        Aliquam erat volutpat. Curabitur massa felis, posuere vel felis consectetur, tristique ultricies augue. Phasellus id ullamcorper neque. Pellentesque in ultricies augue, sed eleifend justo. Nullam ut congue arcu. Pellentesque pulvinar interdum lobortis. Etiam at scelerisque nisl.
-                    </p>
-                    <p class="paralax">
-                        Suspendisse non tortor quam. Ut efficitur ut est id iaculis. Vivamus id porta augue, quis placerat magna. Duis at pellentesque nibh. In ornare nisi nec nibh dapibus molestie. Praesent nec pretium nulla. Ut non iaculis ex. Cras maximus magna eu interdum sollicitudin. Maecenas varius diam a eros scelerisque accumsan. Nunc quis nulla sed lacus suscipit sagittis eu et tellus. Donec pulvinar, sapien ut imperdiet egestas, est neque lobortis dolor, in mollis tortor dolor mollis quam. Nulla sit amet ultrices est.
+                        Brindar Soluciones integrales con Seguridad y Honestidad, siendo aliados de nuestros clientes con estrategias para un objetivo claro y sin pérdidas, Garantizando la Solución de su Proyecto y Trámite.
                     </p>
                 </section>
                 <section id="vision">
                     <h2 class="title" id="vtitle">VISION</h2>
                     <p class="paralax2" >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis malesuada fermentum. Donec ac ligula sapien. Donec sed orci at mauris rutrum mollis vel nec mauris. Integer arcu nisi, maximus et erat eu, cursus rhoncus velit. Praesent semper magna ut ligula bibendum imperdiet. Fusce sit amet rhoncus velit. Vivamus aliquam mollis ligula ac sollicitudin. Praesent ut odio erat. Vivamus suscipit hendrerit nisi. Sed vehicula nunc quis quam sodales tincidunt nec ac lacus. Ut vel sem non dolor facilisis mollis ut at elit. In a interdum nunc.
-                    </p>
-                    <p class="paralax2">
-                        Aliquam erat volutpat. Curabitur massa felis, posuere vel felis consectetur, tristique ultricies augue. Phasellus id ullamcorper neque. Pellentesque in ultricies augue, sed eleifend justo. Nullam ut congue arcu. Pellentesque pulvinar interdum lobortis. Etiam at scelerisque nisl.
-                    </p>
-                    <p class="paralax2">
-                        Suspendisse non tortor quam. Ut efficitur ut est id iaculis. Vivamus id porta augue, quis placerat magna. Duis at pellentesque nibh. In ornare nisi nec nibh dapibus molestie. Praesent nec pretium nulla. Ut non iaculis ex. Cras maximus magna eu interdum sollicitudin. Maecenas varius diam a eros scelerisque accumsan. Nunc quis nulla sed lacus suscipit sagittis eu et tellus. Donec pulvinar, sapien ut imperdiet egestas, est neque lobortis dolor, in mollis tortor dolor mollis quam. Nulla sit amet ultrices est.
+                        Posicionarnos cómo la mejor empresa en soluciones Arquitectónicas y de Obra Civil, Creando un Entorno de Honestidad y Confianza para ser Constantemente Capaces de Brindar Soluciones Innovadoras.
                     </p>
                 </section>
                 <section id="valores">
+                    <section id="fondo">
                     <h2 class="title">VALORES</h2>
-                    <p class="paralax">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis malesuada fermentum. Donec ac ligula sapien. Donec sed orci at mauris rutrum mollis vel nec mauris. Integer arcu nisi, maximus et erat eu, cursus rhoncus velit. Praesent semper magna ut ligula bibendum imperdiet. Fusce sit amet rhoncus velit. Vivamus aliquam mollis ligula ac sollicitudin. Praesent ut odio erat. Vivamus suscipit hendrerit nisi. Sed vehicula nunc quis quam sodales tincidunt nec ac lacus. Ut vel sem non dolor facilisis mollis ut at elit. In a interdum nunc.
-                    </p>
-                    <p class="paralax">
-                        Aliquam erat volutpat. Curabitur massa felis, posuere vel felis consectetur, tristique ultricies augue. Phasellus id ullamcorper neque. Pellentesque in ultricies augue, sed eleifend justo. Nullam ut congue arcu. Pellentesque pulvinar interdum lobortis. Etiam at scelerisque nisl.
-                    </p>
-                    <p class="paralax">
-                        Suspendisse non tortor quam. Ut efficitur ut est id iaculis. Vivamus id porta augue, quis placerat magna. Duis at pellentesque nibh. In ornare nisi nec nibh dapibus molestie. Praesent nec pretium nulla. Ut non iaculis ex. Cras maximus magna eu interdum sollicitudin. Maecenas varius diam a eros scelerisque accumsan. Nunc quis nulla sed lacus suscipit sagittis eu et tellus. Donec pulvinar, sapien ut imperdiet egestas, est neque lobortis dolor, in mollis tortor dolor mollis quam. Nulla sit amet ultrices est.
-                    </p>
+                    <ul class="paralax">
+                        <li>HONESTIDAD</li>
+                        <li>RESILIENCIA</li>
+                        <li>FE</li>
+                        <li>AMABILIDAD</li>
+                        <li>CREATIVIDAD</li>
+                        <li>AMOR</li>
+                        <li>PAZ</li>
+                        <li>LEALTAD</li>
+                    </ul> 
+                </section>
                 </section>
             </section>
             <section id= "servicios" name="servicios">

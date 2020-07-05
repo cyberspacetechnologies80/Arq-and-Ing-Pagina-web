@@ -11,10 +11,21 @@
 #opciones{
     margin-top: 0%;
     margin-left: 200px;
+    display: inline-block;
 }
 #logo{
     width: 100px;
 }
+#Buton_menu{
+    font-size: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top:20px;
+    display: none;
+    border:none;
+    background-color: #e7e7e700;
+}
+
 
 html{
     font-size: 14px;
@@ -131,6 +142,12 @@ section{
 }
 #valores{
     background-image: url('valores.jpg');
+    
+}
+#fondo{
+    background-color: rgba(0, 0, 0, 0.555);
+    padding-top:5px ;
+    padding-bottom:5px ;
 }
 .title{
     text-align: left;
@@ -139,10 +156,10 @@ section{
     margin: 40px;
 }
 .paralax{
-    margin: 20px;
+    margin: 70px;
     text-align: justify;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #vtitle{
@@ -152,10 +169,10 @@ section{
     margin: 40px;
 }
 .paralax2{
-    margin: 20px;
+    margin: 70px;
     text-align: justify;
     color: rgb(0, 0, 0);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #servicios{
@@ -286,4 +303,115 @@ h3{
 }
 i{
     margin-right: 20px;
+}
+@media only screen and (max-width: 1322px) {
+    .card{
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+  }
+@media only screen and (max-width: 1303px) {
+    .card{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}
+@media only screen and (max-width: 1208px) {
+    .card{
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}
+@media only screen and (max-width: 1126px) {
+    .card{
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 1126px) {
+    .card{
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 1054px) {
+    .card{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 1053px) {
+    #opciones{
+        display: block;
+        margin: 0px;
+        padding: 3px;
+        display: none;
+        
+    }
+    .opcionmenuprincipal{
+        display:inline-block;
+        width: 100%;
+        margin-top: 1%;
+        padding-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #cajalogo{
+        display: block;
+        float: none;
+        margin-bottom: 5px;
+    }
+    .card{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .proyecto{
+        width: 70%;
+    }
+    .detalles{
+        margin-top:300px;
+        margin-left:4px;
+        padding:2%;
+        padding-left: 27%;
+        padding-right: 27%;
+    }
+    fieldset{
+        width: 87%;
+        margin-left: 6%;
+    }
+    .col,.col2{
+        width: 100%;
+        display: inline-block;
+    }
+    .col2{
+        margin-top: 50px;
+    }
+    #mapa{
+        width: 90%;
+        margin-left:5%;
+    }
+    input[type="text"]{
+       margin-left: 3%;
+    }
+    input[type="tel"]{
+        margin-left: 3%;
+    }
+    input[type="email"]{
+        margin-left: 3%;
+    }
+    input[type="submit"]{
+        margin-left: 3%;
+    }
+    input[type="submit"]:hover{
+        margin-left: 3%;
+    }
+    textarea{
+        width: 86%;
+        margin-left: 3%;
+    }
+    #Buton_menu{
+        
+        display: inline;
+    }
 }
