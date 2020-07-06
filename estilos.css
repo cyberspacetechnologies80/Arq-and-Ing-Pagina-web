@@ -20,12 +20,18 @@
     font-size: 30px;
     float: right;
     margin-right: 20px;
-    margin-top:20px;
+    margin-top:18px;
+    padding-top: 3px;
     display: none;
-    border:none;
+    border:2px solid;
+    border-color: rgba(36, 35, 35, 0.747);
+    border-radius: 6px;
     background-color: #e7e7e700;
 }
-
+#burguer{
+    margin-left: 20px;
+    color: rgba(36, 35, 35, 0.747);
+}
 
 html{
     font-size: 14px;
@@ -304,6 +310,30 @@ h3{
 i{
     margin-right: 20px;
 }
+.externo{
+    color: white;
+    text-decoration:none;
+}
+
+#slider{
+    width: 100%;
+    height: 500px;
+    animation-name: slider;
+    animation-duration: 9s;
+    animation-timing-function: ease-in;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100% ;
+    animation-iteration-count: infinite;
+}
+@keyframes slider {
+    0%   {background-image: url("./Carrusel/Imagen.jpg");}
+    33%  {background-image: url("./Carrusel/Imagen2.jpg");}
+    66%  {background-image: url("./Carrusel/Imagen3.jpg");}
+    99%  {background-image: url("./Carrusel/Imagen.jpg");}  
+}
+  
+
 @media only screen and (max-width: 1322px) {
     .card{
         margin-right: 4%;
@@ -321,6 +351,10 @@ i{
         margin-right: 2%;
         margin-left: 2%;
     }
+    .opcionmenuprincipal{
+        padding-left: 20px; 
+        padding-right: 20px;
+     }
 }
 @media only screen and (max-width: 1126px) {
     .card{
@@ -334,10 +368,14 @@ i{
         margin-left: 1%;
     }
 }
-@media only screen and (max-width: 1054px) {
+@media only screen and (max-width: 1067px) {
     .card{
         margin-right: 5px;
         margin-left: 5px;
+    }
+    .opcionmenuprincipal{
+       padding-left: 20px; 
+       padding-right: 20px;
     }
 }
 @media only screen and (max-width: 1053px) {
@@ -346,15 +384,16 @@ i{
         margin: 0px;
         padding: 3px;
         display: none;
+        width: 100%;
         
     }
     .opcionmenuprincipal{
         display:inline-block;
         width: 100%;
         margin-top: 1%;
-        padding-left: 10%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-left: 6%;
+        padding-top: 14px;
+        padding-bottom: 14px;
         text-align: center;
     }
     #cajalogo{
